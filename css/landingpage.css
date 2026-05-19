@@ -394,7 +394,20 @@ h1 {
 }
 
 /* Reviews */
+.reviews-section {
+  background-color: #c9c5b5;
+  padding: 70px 60px 28px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
 
+.reviews-section h2 {
+  font-size: 52px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 8px;
+}
 
 /* Responsive */
 
