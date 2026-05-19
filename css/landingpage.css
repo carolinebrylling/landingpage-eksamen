@@ -245,8 +245,8 @@ h1 {
   padding-left: -120px;
 }
 
-text-area h2 {
-  font-size: 40px;
+.text-area h2 {
+  font-size: 60px;
   line-height: 1.08;
   letter-spacing: 2px;
   font-weight: 800;
