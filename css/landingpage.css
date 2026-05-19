@@ -224,6 +224,26 @@ h1 {
   line-height: 1.15;
 }
 
+/* Memories - my social proof */
+.memories-section {
+  background-color: #c9c5b5;
+  padding: 90px 60px;
+  overflow: hidden;
+}
+
+.memories-content {
+  width: calc(100% - 80px);
+  margin-left: -10px;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+}
+.text-area {
+  width: 330px;
+  flex-shrink: 0;
+  padding-left: -120px;
+}
 
 
 
