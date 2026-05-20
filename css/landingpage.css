@@ -326,6 +326,7 @@ h1 {
   transition: 0.3s ease;
 }
 
+
 .color-card figcaption {
   font-size: 16px;
   color: #111;
@@ -355,14 +356,12 @@ h1 {
   background-color: #c6c5d4;
 }
 
-
 .color-card:hover {
   transform: translateY(-8px);
   border-color: #8b8579;
   background-color: #beb8a9;
 }
 
-/* Reviews */
 /* Reviews section */
 
 .reviews-section {
