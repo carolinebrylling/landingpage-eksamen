@@ -37,10 +37,10 @@ const products = [
   },
 
   {
-    name: "Lumina Pink",
-    color: "Dusty Pink",
-    image: "img/dusty-pink.png",
-    alt: "Lumina højtaler i Dusty Pink"
+    name: "Lumina Rose",
+    color: "Dusty Rose",
+    image: "img/dusty-rose.png",
+    alt: "Lumina højtaler i Dusty Rose"
   },
 
   {
@@ -58,3 +58,22 @@ const products = [
   }
 ];
 
+let currentIndex = 0;
+
+const productImage = document.getElementById("productImage");
+const productName = document.getElementById("productName");
+const productColor = document.getElementById("productColor");
+const changeColorBtn = document.getElementById("changeColorBtn");
+
+changeColorBtn.addEventListener("click", function () {
+  currentIndex++;
+
+  if (currentIndex >= products.length) {
+    currentIndex = 0;
+  }
+
+  productImage.src = products[currentIndex].image;
+  productImage.alt = products[currentIndex].alt;
+  productName.textContent = products[currentIndex].name;
+  productColor.textContent = products[currentIndex].color;
+});
