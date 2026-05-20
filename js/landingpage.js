@@ -26,3 +26,5 @@ exploreBtn.addEventListener("click", () => {
     block: "start"
   });
 });
+
+
