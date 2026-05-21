@@ -205,25 +205,51 @@ h1 {
   font-weight: 700;
 }
 
-button {
-  margin-top: 22px;
-  width: 190px;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 30px;
-  background-color: #b8a887;
-  color: white;
-  font-size: 16px;
+.color-options {
+  display: flex;
+  gap: 22px;
+  margin-top: 35px;
+  align-items: center;
+}
+
+.color-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   cursor: pointer;
+  border: none;
   transition: 0.3s ease;
 }
 
-button:hover {
-  background-color: #9f8f70;
-  transform: scale(1.04);
+/* FARVERNE */
+.moonlight {
+  background-color: #f4f1ec;
+  border: 1.5px solid #111;
 }
 
+.saga {
+  background-color: #a8b79f;
+}
 
+.dusty {
+  background-color: #f29aa3;
+}
+
+.lavender {
+  background-color: #c6bddc;
+}
+
+/* Når man klikker på en farve */
+.color-btn.active {
+  border: 2px solid #111;
+  transform: scale(1.08);
+}
+
+.color-label {
+  font-size: 9px;
+  font-weight: 700;
+  margin-top: 8px;
+}
 .features {
   background: #f7f4ed;
   padding: 120px 20px;
@@ -570,7 +596,7 @@ button:hover {
 
 .footer {
   width: 100%;
-  background-color: #d8d4c2;
+  background-color: #a4a293;
   padding: 70px 100px 28px;
   color: #111;
   margin: 0;

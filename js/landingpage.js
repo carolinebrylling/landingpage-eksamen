@@ -63,7 +63,7 @@ let currentIndex = 0;
 const productImage = document.getElementById("productImage");
 const productName = document.getElementById("productName");
 const productColor = document.getElementById("productColor");
-const changeColorBtn = document.getElementById("changeColorBtn");
+
 
 changeColorBtn.addEventListener("click", function () {
   currentIndex++;
