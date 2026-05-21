@@ -62,10 +62,13 @@
 
     <!-- Switch color section -->
 
-    <section class="product-section">
+   <section class="product-section">
 
   <article class="product-image-box">
-    <img id="productImage" src="img/moonlight-white.png" alt="Lumina White">
+    <img 
+      id="productImage"
+      src="img/moonlight-white.png" 
+      alt="Lumina White">
   </article>
 
   <article class="product-info">
@@ -79,24 +82,55 @@
       <p><strong>Farve:</strong> <span id="productColor">Moonlight White</span></p>
     </div>
 
-    <div class="info-line">
+    <article class="info-line">
       <p><strong>Pris:</strong> 1499,- kr</p>
-    </div>
+    </article>
 
-   <div class="color-options">
+    <section class="color-options">
 
-  <button class="color-btn moonlight active" data-color="Moonlight White"></button>
+      <div class="color-choice">
+        <button 
+          class="color-btn moonlight active"
+          data-name="Lumina White"
+          data-color="Moonlight White"
+          data-image="img/moonlight-white.png">
+        </button>
+        <p>Moonlight White</p>
+      </div>
 
-  <button class="color-btn saga" data-color="Saga Green"></button>
+      <article class="color-choice">
+        <button 
+          class="color-btn saga"
+          data-name="Lumina Green"
+          data-color="Saga Green"
+          data-image="img/saga-green.png">
+        </button>
+        <p>Saga Green</p>
+      </article>
 
-  <button class="color-btn dusty" data-color="Dusty Pink"></button>
+      <article class="color-choice">
+        <button 
+          class="color-btn dusty"
+          data-name="Lumina Rose"
+          data-color="Dusty Rose"
+          data-image="img/dusty-rose.png">
+        </button>
+        <p>Dusty Rose</p>
+      </article>
 
-  <button class="color-btn lavender" data-color="Lavender Purple"></button>
+      <article class="color-choice">
+        <button 
+          class="color-btn lavender"
+          data-name="Lumina Mist"
+          data-color="Lavender Mist"
+          data-image="img/lavender-mist.png">
+        </button>
+        <p>Lavender Mist</p>
+      </article>
 
-</div>
+    </section>
 
-<p class="color-label" id="colorLabel">Moonlight White</p>
-
+    <button class="buy-btn">køb nu</button>
   </article>
 
 </section>

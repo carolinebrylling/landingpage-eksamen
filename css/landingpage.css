@@ -150,9 +150,6 @@ h1 {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(45, 40, 30, 0.15);
 }
-
-/* switch color */
-
 .product-section {
   width: 100%;
   min-height: 650px;
@@ -160,56 +157,76 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 90px;
-  padding: 40px;
+  gap: 70px;
+  padding: 40px 60px;
 }
 
+
 .product-image-box {
-  width: 600px;
-  height: 520px;
-  background-color: #ece6d9;
-  border-radius: 28px;
+  width: 590px;
+  height: 550px;
+  background-color: #f2eee5;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .product-image-box img {
-  width: 85%;
+  width: 88%;
   height: auto;
   object-fit: contain;
 }
 
 .product-info {
-  width: 260px;
+  width: 330px;
 }
 
 .product-info h4 {
   font-size: 15px;
-  letter-spacing: 6px;
-  color: #7c725c;
-  margin-bottom: 25px;
-}
-
-.info-line {
-  border-bottom: 1px solid #c5bea9;
-  padding: 13px 0;
-}
-
-.info-line p {
-  font-size: 17px;
-  color: #111;
-}
-
-.info-line strong {
+  letter-spacing: 7px;
+  color: #7b725d;
+  margin-bottom: 30px;
   font-weight: 700;
 }
 
+.info-line {
+  border-bottom: 1px solid #bfb8a4;
+  padding: 15px 0;
+}
+
+.info-line p {
+  font-size: 23px;
+  color: #111;
+  margin: 0;
+}
+
+.info-line strong {
+  font-weight: 800;
+}
+
+/* farveknapper */
 .color-options {
   display: flex;
   gap: 22px;
   margin-top: 35px;
+  align-items: flex-start;
+}
+
+.color-choice {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.color-choice p {
+  font-size: 8px;
+  font-weight: 700;
+  margin-top: 8px;
+  text-align: center;
+  width: 62px;
+  color: #111;
 }
 
 .color-btn {
@@ -221,35 +238,50 @@ h1 {
   transition: 0.3s ease;
 }
 
-/* FARVERNE */
+/* farver */
 .moonlight {
   background-color: #f4f1ec;
-  border: 1.5px solid #111;
 }
 
 .saga {
-  background-color: #a8b79f;
+  background-color: #a9b79f;
 }
 
 .dusty {
-  background-color: #f29aa3;
+  background-color: #f09ca5;
 }
 
 .lavender {
-  background-color: #c6bddc;
+  background-color: #c5bddb;
 }
 
-/* Når man klikker på en farve */
+/* valgt farve */
 .color-btn.active {
   border: 2px solid #111;
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
-.color-label {
-  font-size: 9px;
-  font-weight: 700;
-  margin-top: 8px;
+/* køb nu knap */
+.buy-btn {
+  margin-top: 20px;
+  width: 240px;
+  height: 55px;
+  border: none;
+  border-radius: 40px;
+  background-color: #747267;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
+
+.buy-btn:hover {
+  background-color: #5f5d54;
+  transform: scale(1.03);
+}
+/* Features */
+
 .features {
   background: #f7f4ed;
   padding: 120px 20px;

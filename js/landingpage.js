@@ -63,17 +63,25 @@ let currentIndex = 0;
 const productImage = document.getElementById("productImage");
 const productName = document.getElementById("productName");
 const productColor = document.getElementById("productColor");
+const colorButtons = document.querySelectorAll(".color-btn");
 
+colorButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
 
-changeColorBtn.addEventListener("click", function () {
-  currentIndex++;
+    const chosenName = button.dataset.name;
+    const chosenColor = button.dataset.color;
+    const chosenImage = button.dataset.image;
 
-  if (currentIndex >= products.length) {
-    currentIndex = 0;
-  }
+    productName.textContent = chosenName;
+    productColor.textContent = chosenColor;
 
-  productImage.src = products[currentIndex].image;
-  productImage.alt = products[currentIndex].alt;
-  productName.textContent = products[currentIndex].name;
-  productColor.textContent = products[currentIndex].color;
+    productImage.src = chosenImage;
+    productImage.alt = chosenName;
+
+    colorButtons.forEach(function(btn) {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+  });
 });
