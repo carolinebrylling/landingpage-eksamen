@@ -152,35 +152,34 @@ h1 {
 }
 .product-section {
   width: 100%;
-  min-height: 650px;
-  background-color: #c9c5b5;
+  min-height: calc(100vh - 120px);
+  background-color: #d9d7cd;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* flytter indhold mod venstre */
   gap: 70px;
-  padding: 40px 60px;
+  padding: 34px; /* fjerner venstre luft */
 }
-
 
 .product-image-box {
   width: 590px;
   height: 550px;
   background-color: #f7f4ed;
   border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  padding: 70px 38px;
+  margin-left: 0; /* sikrer den starter til venstre */
 }
-
 .product-image-box img {
-  width: 88%;
+  width: 90%;
   height: auto;
   object-fit: contain;
+  margin-top: -30px;
+  margin-left: 30px;
 }
 
 .product-info {
   width: 330px;
+  margin-left: 150px;
 }
 
 .product-info h4 {
@@ -297,7 +296,7 @@ h1 {
 .feature-card {
   width: 160px;
   height: 180px;
-  background: #c9c5b5;
+  background: #dad8ce;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -325,7 +324,7 @@ h1 {
 
 /* Memories - my social proof */
 .memories-section {
-  background-color: #c9c5b5;
+  background-color: #dad8ce;
   padding: 90px 60px;
   overflow: hidden;
 }
@@ -420,7 +419,7 @@ h1 {
   height: 360px;
   border: 2px solid #5f594a;
   border-radius: 20px;
-  background-color: #e7e2d6;
+  background-color: #dad8ce;
   padding: 22px 18px 18px;
 
   display: flex;
@@ -488,14 +487,14 @@ h1 {
 
 .color-card:hover {
   transform: translateY(-8px);
-  border-color: #8b8579;
-  background-color: #beb8a9;
+  border-color: #000000;
+  background-color: #b3b1a9;
 }
 
 /* Reviews section */
 
 .reviews-section {
-  background-color: #c9c5b5;
+  background-color: #dad8ce;
   padding: 70px 60px 28px;
   text-align: center;
   border-top: 1px solid #222;
@@ -629,7 +628,7 @@ h1 {
 
 .footer {
   width: 100%;
-  background-color: #a49d83;
+  background-color: #f7f4ed;
   padding: 70px 100px 28px;
   color: #111;
   margin: 0;
