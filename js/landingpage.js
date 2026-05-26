@@ -1,7 +1,7 @@
 "use strict";
 
 const readBtn = document.querySelector("#readBtn");
-const exploreBtn = document.querySelector("#exploreBtn");
+
 
 // readBtn
 readBtn.addEventListener("click", () => {
@@ -10,6 +10,8 @@ readBtn.addEventListener("click", () => {
     block: "start"
   });
 });
+
+const exploreBtn = document.querySelector("#exploreBtn");
 
 // exploreBtn
 exploreBtn.addEventListener("click", () => {
