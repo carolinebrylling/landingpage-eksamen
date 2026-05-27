@@ -21,6 +21,7 @@ body {
     --color-card-background:#dad8ce;
     --color-card-hover:#b3b1a9;
     --stars-background:#3f8b5a;
+    --border-color:#8f8a80;
     /* speaker colors */
     --moonlight-white:#f4f1ec;
     --saga-green:#a9b79f;
@@ -301,6 +302,76 @@ h1 {
   transform: scale(1.03);
 }
 /* Features */
+.speaker-features {
+  background-color: var(--color-background);
+  padding: 200px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 90px;
+  font-family: Arial, sans-serif;
+}
+
+.text {
+  width: 430px;
+}
+
+.name {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.text h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+
+.item {
+  border-top: 1px solid var(--border-color);
+}
+
+.item:last-child {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.item button {
+  width: 100%;
+  padding: 17px 0;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+  color: #000000;
+}
+
+.item p {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #000000;
+  transition: 0.3s ease;
+}
+
+.item.open p {
+  max-height: 120px;
+  padding-bottom: 18px;
+}
+
+.image img {
+  margin-left: 170px;
+  margin-bottom: 70px;
+  width: 420px;
+}
 
 
 /* Memories - my social proof */
