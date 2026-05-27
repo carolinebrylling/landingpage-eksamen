@@ -18,13 +18,14 @@ body {
     --buttons-color:#5f5d54;
     --text-color:#5d5a53;
     --speaker-background:rgb(240, 236, 231);
+    --color-card-background:#dad8ce;
+    --color-card-hover:#b3b1a9;
+    --stars-background:#3f8b5a;
     /* speaker colors */
     --moonlight-white:#f4f1ec;
     --saga-green:#a9b79f;
     --dusty:#f09ca5;
     --lavender:#c5bddb;
-
-
 
 
 }
@@ -289,7 +290,7 @@ h1 {
   height: 55px;
   border: none;
   border-radius: 40px;
-  background-color: #5f5d54;
+  background-color: var(--buttons-color);
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -346,7 +347,7 @@ h1 {
 
 /* Memories - my social proof */
 .memories-section {
-  background-color: #dad8ce;
+  background-color: var(--color-card-background);
   padding: 90px 60px;
   overflow: hidden;
   
@@ -384,7 +385,7 @@ h1 {
 }
 
 #exploreBtn {
-  background-color: #5f5d54;
+  background-color: var(--buttons-color);
   color: white;
   border: none;
   border-radius: 30px;
@@ -414,8 +415,8 @@ h1 {
 
 /* speaker section */
 .color-section {
-  background-color: #f7f4ed;
-  padding: 60px 30px 70px;
+  background-color: var(--color-background);
+  padding: 120px 80px 140px;
   text-align: center;
   border-top: 1px solid #222;
 }
@@ -440,9 +441,9 @@ h1 {
 .color-card {
   width: 295px;
   height: 360px;
-  border: 2px solid #5f594a;
+  border: 2px solid var(--buttons-color);
   border-radius: 20px;
-  background-color: #dad8ce;
+  background-color: var(--color-card-background);
   padding: 22px 18px 18px;
 
   display: flex;
@@ -493,32 +494,32 @@ h1 {
 }
 
 .saga-green {
-  background-color: #6d765f;
+  background-color: var(--saga-green);
 }
 
 .dusty-pink {
-  background-color: #d2aba8;
+  background-color: var(--dusty);
 }
 
 .moonlight-white {
-  background-color: #b8b8b2;
+  background-color: var(--moonlight-white);
 }
 
 .lavender-mist {
-  background-color: #c6c5d4;
+  background-color: lavender;
 }
 
 .color-card:hover {
   transform: translateY(-8px);
   border-color: #000000;
-  background-color: #b3b1a9;
+  background-color: var(--color-card-hover);
 }
 
 /* Reviews section */
 
 .reviews-section {
-  background-color: #dad8ce;
-  padding: 70px 60px 28px;
+  background-color: var(--color-card-background);
+  padding: 90px 80px 120px;
   text-align: center;
   border-top: 1px solid #222;
 
@@ -564,7 +565,7 @@ h1 {
 .stars,
 .small-stars {
   display: inline-block;
-  background-color: #3f8b5a;
+  background-color: var(--stars-background);
   color: white;
   font-size: 18px;
   letter-spacing: 2px;
