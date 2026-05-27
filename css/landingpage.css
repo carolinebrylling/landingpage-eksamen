@@ -6,23 +6,45 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: white;
-}
-:root {
-    --side-padding: 38px;
+  background: var(--color-background);
 }
 
+
+/* Designfarver variabler */
+:root {
+    --side-padding: 38px;
+    --color-background:#f7f4ed;
+    --border-color:#ddd8cf;
+    --buttons-color:#5f5d54;
+    --text-color:#5d5a53;
+    --speaker-background:rgb(240, 236, 231);
+    /* speaker colors */
+    --moonlight-white:#f4f1ec;
+    --saga-green:#a9b79f;
+    --dusty:#f09ca5;
+    --lavender:#c5bddb;
+
+
+
+
+}
+
+
 .header {
-  height: 120px;
-  padding: 0px 38px;
-  background: #f7f4ed;
+   height: 120px;
+  padding: 0 38px;
+  background-color: var(--color-background);
   border-bottom: 1px solid #777;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 9999;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  box-sizing: border-box;
 }
 
 .logo,
@@ -36,7 +58,7 @@ body {
 .logo {
   gap: 12px;
   padding-right: 45px;
-  border-right: 1px solid #ddd8cf;
+  border-right: 1px solid var(--border-color);
 }
 
 .logo-main {
@@ -68,13 +90,14 @@ body {
 .icons {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 6px;
 }
 
 .icons img {
   width: 24px;
   height: 24px;
   display: block;
+  gap: 8px;
 }
 
 .icons button {
@@ -118,7 +141,7 @@ h1 {
 .description {
   max-width: 350px;
   margin-bottom: 42px;
-  color: #5d5a53;
+  color: var(--text-color);
   font-size: 0.95rem;
   line-height: 1.55;
 }
@@ -134,7 +157,7 @@ h1 {
   border: 1.5px solid #4c4639;
   border-radius: 999px;
   background: transparent;
-  color: #5f5d54;
+  color: var(--buttons-color);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -142,8 +165,8 @@ h1 {
 }
 
 .btn.primary {
-  background: #514b3a;
-  color: #fffaf1;
+  background: var(--buttons-color);
+  color: var(--color-background);
 }
 
 .btn:hover {
@@ -153,7 +176,7 @@ h1 {
 .product-section {
   width: 100%;
   min-height: calc(100vh - 120px);
-  background-color: #d9d7cd;
+  background-color: var(--farve-baggrund);
   display: flex;
   align-items: center;
   justify-content: flex-start; /* flytter indhold mod venstre */
@@ -164,8 +187,7 @@ h1 {
 .product-image-box {
   width: 590px;
   height: 550px;
-  background-color: #f7f4ed;
-  border-radius: 30px;
+  background-color: var(--speaker-background);
   padding: 70px 38px;
   margin-left: 0; /* sikrer den starter til venstre */
 }
@@ -239,19 +261,19 @@ h1 {
 
 /* farver */
 .moonlight {
-  background-color: #f4f1ec;
+  background-color: var(--moonlight-white);
 }
 
 .saga {
-  background-color: #a9b79f;
+  background-color: var(--saga-green);
 }
 
 .dusty {
-  background-color: #f09ca5;
+  background-color: var(--dusty);
 }
 
 .lavender {
-  background-color: #c5bddb;
+  background-color: var(--lavender);
 }
 
 /* valgt farve */
@@ -276,13 +298,13 @@ h1 {
 }
 
 .buy-btn:hover {
-  background-color: #5f5d54;
+  background-color: var(--buttons-color);
   transform: scale(1.03);
 }
 /* Features */
 
 .features {
-  background: #f7f4ed;
+  background: var(--color-background);
   padding: 120px 20px;
 }
 
@@ -612,13 +634,13 @@ h1 {
 }
 
 #reviewBtn:hover {
-  background-color: #3f3a2e;
+  background-color: var(--buttons-color);
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(45, 40, 30, 0.25);
 }
 
 #reviewBtn:hover {
-  background-color: #3f3a2e;
+  background-color:var(--buttons-color);
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(45, 40, 30, 0.25);
 }
@@ -629,7 +651,7 @@ h1 {
 
 .footer {
   width: 100%;
-  background-color: #f7f4ed;
+  background-color: var(--color-background);
   padding: 70px 100px 28px;
   color: #111;
   margin: 0;
