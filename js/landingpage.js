@@ -51,7 +51,7 @@ const products = [
     alt: "Lumina højtaler i Lavender Mist"
   }
 ];
-
+//switch colors
 let currentIndex = 0;
 
 const productImage = document.getElementById("productImage");
@@ -79,3 +79,22 @@ colorButtons.forEach(function(button) {
     button.classList.add("active");
   });
 });
+
+//Features 
+const items = document.querySelectorAll(".item");
+
+items.forEach((item) => {
+  const button = item.querySelector("button");
+  const icon = item.querySelector(".icon");
+
+  button.addEventListener("click", () => {
+    item.classList.toggle("open");
+
+    if (item.classList.contains("open")) {
+      icon.textContent = "-";
+    } else {
+      icon.textContent = "+";
+    }
+  });
+});
+
