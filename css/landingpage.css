@@ -108,15 +108,15 @@ body {
 }
 
 .hero {
-  min-height: calc(100vh - 82px);
-  padding: 70px 38px;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/lumina-image-2.png") center / cover no-repeat;
+  min-height: calc(140vh - 80px);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/lumina-image-2.png") center /cover no-repeat;
   display: flex;
   align-items: center;
 }
 
 .content {
   max-width: 430px;
+  padding-left: 36px;
   position: relative;
   z-index: 2;
 }
@@ -208,7 +208,7 @@ h1 {
 .product-info h4 {
   font-size: 15px;
   letter-spacing: 7px;
-  color: #7b725d;
+  color: #000000;
   margin-bottom: 30px;
   font-weight: 700;
 }
