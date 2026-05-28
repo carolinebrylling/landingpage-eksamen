@@ -108,6 +108,7 @@ body {
   cursor: pointer;
 }
 
+/* herosection */
 .hero {
   min-height: calc(140vh - 80px);
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/lumina-image-2.png") center /cover no-repeat;
@@ -175,15 +176,17 @@ h1 {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(45, 40, 30, 0.15);
 }
+
+/* Product section */
 .product-section {
   width: 100%;
   min-height: calc(100vh - 120px);
   background-color: var(--farve-baggrund);
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* flytter indhold mod venstre */
+  justify-content: flex-start; 
   gap: 70px;
-  padding: 34px; /* fjerner venstre luft */
+  padding: 34px; 
 }
 
 .product-image-box {
@@ -206,7 +209,7 @@ h1 {
 
 .product-info h4 {
   font-size: 15px;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   color: #000000;
   margin-bottom: 30px;
   font-weight: 700;
