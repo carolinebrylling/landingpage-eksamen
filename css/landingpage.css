@@ -685,9 +685,9 @@ h1 {
 .footer {
   width: 100%;
   background-color: var(--color-background);
-  padding: 70px 100px 28px;
+  padding: 100px 100px 40px;
   color: #111;
-  margin: 0;
+  margin-bottom: 140px;
 }
 
 .footer-content {
