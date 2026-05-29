@@ -207,7 +207,7 @@ h1 {
   margin-left: 150px;
 }
 
-.product-info h4 {
+.product-info h2 {
   font-size: 15px;
   letter-spacing: 4px;
   color: #000000;
@@ -396,7 +396,7 @@ h1 {
 .text-area {
   width: 330px;
   flex-shrink: 0;
-  padding-left: -120px;
+  
 }
 
 .text-area h2 {
